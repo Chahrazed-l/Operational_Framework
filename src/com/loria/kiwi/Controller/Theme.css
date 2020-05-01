@@ -1,0 +1,249 @@
+.anchor{
+	-fx-background-image:url('file:ressource/image/background1.png');
+	-fx-background-size: 700px 300px;
+}
+.anchorbackground{
+	-fx-background-color: white; 
+}
+.lion {
+    -fx-background-color: 
+        rgba( 60,179,113),      
+        linear-gradient(#3cb371 0%, #3cb371 10%,  #3cb371 50%,  #3cb371 51%, #3cb371 51%);
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 6,5;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 11px;
+}
+.check-box .box {
+
+-fx-background-color: white;
+-fx-border-color:#32CD32;
+-fx-border-radius:4px; 
+
+}
+
+.check-box:selected .mark {
+
+-fx-background-color: white;
+
+}
+
+.check-box:selected .box {
+
+-fx-background-color: #3CB371;
+}
+
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+.fancytext {
+    -fx-font: 100px Tahoma;
+    -fx-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, aqua 0%, red 50%);
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+}
+.tab-pane 
+{
+-fx-skin: "com.sun.javafx.scene.control.skin.TabPaneSkin";
+/* -fx-tab-min-width: 4.583em;  55 */
+/* -fx-tab-max-width: 4.583em; 55 */
+-fx-tab-min-height: 2em; /* 24 */
+-fx-tab-max-height: 2em; /* 24 */
+}
+.tab .tab-label 
+{
+-fx-skin: "com.sun.javafx.scene.control.skin.LabelSkin";
+-fx-background-color: transparent;    
+-fx-alignment: CENTER;
+-fx-text-fill: -fx-text-base-color;
+}
+/*
+.tab *.tab-label Text {
+-fx-effect: dropshadow(two-pass-box , rgba(255, 255, 255, 0.4), 1, 0.0 , 0, 1);
+}*/
+.tab-content-area 
+{
+-fx-background-color: -fx-control-inner-background;
+-fx-padding: 0.0em; /* 0 */
+/* -fx-opacity: -fx-disabled-opacity;*/
+}
+.tab 
+{
+/* This is how it is done in Button, but the -1 inset caused a white line  */
+/* to appear beneath the tab, which looks bad, so it's taken out below.    */
+/*    -fx-background-color: -fx-shadow-highlight-color, -fx-tab-border-color, -fx-inner-border, -fx-body-color;
+-fx-background-radius: 5 5 0 0, 5 5 0 0, 4 4 0 0, 3 3 0 0;
+-fx-background-insets: 0 0 -1 0, 0, 1, 2;*/
+-fx-background-insets: 0, 1, 2;
+-fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+-fx-padding: 0.083333em 0.5em 0.083333em 0.5em; /* 1 6 1 6 */
+/*    -fx-text-fill: -fx-text-base-color;*/
+}
+.tab:top 
+{
+-fx-background-color: rgba(154,205,50),
+        linear-gradient( #3CB371,  #3CB371),
+        linear-gradient(#3CB371 0%, #3CB371 10%,  #3CB371 50%,  #3CB371 51%, #3CB371 100%);
+}
+.tab:right 
+{
+-fx-background-color: #3CB371;
+}
+.tab:bottom 
+{
+-fx-background-color: #3CB371;
+
+}
+.tab:left 
+{
+-fx-background-color: #3CB371;
+}
+.tab:hover 
+{
+-fx-color: -fx-hover-base;
+}
+.tab:selected 
+{
+/*    -fx-background-color: white;*/
+/*    -fx-background-color: -fx-tab-border-color, -fx-inner-border, -fx-body-color;
+-fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+-fx-background-insets: 0, 1 1 0 1, 2 2 0 2;*/
+-fx-background-color:  rgba(154,205,50),
+        linear-gradient( #3CB371,  #3CB371),
+        linear-gradient(#3CB371 0%, #3CB371 10%,  #3CB371 50%,  #3CB371 51%, #3CB371 100%);
+-fx-background-insets: 0, 1 1 0 1;
+-fx-background-radius: 5 5 0 0, 4 4 0 0;
+}
+/* .tab:disabled 
+{
+-fx-opacity: -fx-disabled-opacity;
+}
+.tab:disabled:hover 
+{
+-fx-color: -fx-base;
+-fx-opacity: -fx-disabled-opacity;
+}*/
+.tab-pane *.tab-header-background 
+{
+-fx-background-color: white;
+-fx-effect: innershadow(two-pass-box , rgba(154,205,50) , 4, 0.0 , 0 , 0);
+}
+/*.tab-pane *.tab-header-area {*/
+/* I would like to use -fx-tab-border-color here, but for some reason it */
+/* just isn't the correct color, even though it works in :top above */
+/*    -fx-background-color: -fx-tab-border-color, lightgray;*/
+/*}*/
+.tab-pane:top *.tab-header-area 
+{
+-fx-background-insets: 0, 0 0 1 0;
+-fx-padding: 0.416667em 0.166667em 0.0em 0.833em; /* 5 2 0 10 */
+}
+.tab-pane:bottom *.tab-header-area 
+{
+-fx-background-insets: 0, 1 0 0 0;
+-fx-padding: 0 0.166667em 0.416667em 0.833em; /* 0 2 5 0 */
+}
+.tab-pane:left *.tab-header-area 
+{
+-fx-background-insets: 0, 0 1 0 0;
+-fx-padding: 0.833em 0.0em 0.166667em 0.416667em; /* 10 0 2 5 */
+}
+.tab-pane:right *.tab-header-area 
+{
+-fx-background-insets: 0, 0 0 0 1;
+-fx-padding: 0.833em 0.416667em 0.166667em 0.0em; /* 10 5 2 0 */
+}
+.tab-pane .headers-region 
+{
+-fx-effect: dropshadow(two-pass-box , rgba(154,205,50) , 4, 0.0 , 0, 0);
+}
+/* TODO: scaling the shape seems to make it way too large */
+.tab-close-button 
+{
+-fx-background-color: #32CD32;
+-fx-shape: "M 0,0 H1 L 4,3 7,0 H8 V1 L 5,4 8,7 V8 H7 L 4,5 1,8 H0 V7 L 3,4 0,1 Z";
+-fx-scale-shape: false;
+-fx-effect: dropshadow(two-pass-box , rgba(154,205,50), 1, 0.0 , 0, 1);
+}
+.tab-close-button:hover 
+{
+-fx-background-color: #3CB371;
+}
+/* CONTROL BUTTONS */
+.control-buttons-tab 
+{
+-fx-background-color: #3CB371;
+-fx-background-insets: 0, 1, 2;
+-fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+-fx-padding: 0.083333em 0.25em 0.083333em 0.25em; /* 1 3 1 3 */
+}
+.tab-down-button 
+{
+-fx-background-color: transparent;
+-fx-padding: 0.0em 0.416667em 0.0em 0.416667em; /* 0 5 0 5 */
+}
+.tab-down-button:hover 
+{
+-fx-background-color: #3CB371;
+-fx-color: -fx-hover-base;
+}
+.tab-down-button .arrow 
+{
+-fx-background-color: #3CB371;
+-fx-background-insets: 1 0 -1 0, 0;
+-fx-padding: 0.238083em 0.416667em 0.238083em 0.416667em; /* 2.857 5 2.857 5 */
+-fx-shape: "M 0 0 H 7 L 3.5 4 z";
+}
+/* FLOATING TABS CUSTOMISATION */
+.tab-pane.floating *.tab-header-background {
+-fx-background-color: null;
+}
+.tab-pane.floating *.tab-header-area 
+{
+-fx-background-color: null;
+}
+.tab-pane.floating *.tab-content-area 
+{
+-fx-background-color: #3CB371;
+-fx-background-insets: 0, 1;
+-fx-background-radius: 5, 4;
+}
+.tab-pane.floating *.tab 
+{
+-fx-background-color: #3CB371;
+-fx-background-insets: 0, 1, 2;
+-fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+}
+.tab-pane.floating *.tab:selected 
+{
+-fx-background-color: #3CB371;
+-fx-background-insets: 0 0 -1 0, 1 1 -1 1;
+-fx-background-radius: 5 5 0 0, 4 4 0 0;
+}
+
+
+.combo-box{
+    -fx-border-color:#3cb371;
+    -fx-border-style:solid;
+    -fx-border-width:2;
+}
+.combo-box .arrow{
+    -fx-background-color:#3cb371;
+}
+.combo-box .arrow-button{
+    -fx-background-color:white;
+    
+}
+.combo-box .list-cell{
+    -fx-background-color:#F0F0F0;
+}
+.green-bar {
+    -fx-accent: #3CB371;
+}

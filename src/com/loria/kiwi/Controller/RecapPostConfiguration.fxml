@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="700.0" styleClass="anchorbackground" stylesheets="@Theme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.loria.kiwi.Controller.RecapPostConfigurationController">
+   <children>
+      <SplitPane dividerPositions="0.13518518518518519, 0.30925925925925923, 0.674074074074074" layoutX="11.0" layoutY="54.0" orientation="VERTICAL" prefHeight="542.0" prefWidth="682.0" AnchorPane.bottomAnchor="54.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="54.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="113.0" prefWidth="604.0" styleClass="anchorbackground">
+               <children>
+                  <Label layoutX="13.0" layoutY="14.0" text="Request Type:" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></Label>
+                  <Label fx:id="requestType" layoutX="158.0" layoutY="14.0" text="Label" textFill="#ae2929" />
+                  <Label layoutX="13.0" layoutY="48.0" text="Scenario Type:" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></Label>
+                  <Label fx:id="scenarioType" layoutX="158.0" layoutY="48.0" text="Label" textFill="#ae2929">
+                     <font>
+                        <Font size="12.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="anchorbackground">
+               <children>
+                  <Label layoutX="12.0" layoutY="1.0" text="Information About the Iterations" textFill="#096f5c">
+                     <font>
+                        <Font name="Apple Chancery" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="8.0" layoutY="32.0" text="Number of Test Runs:" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></Label>
+                  <Label fx:id="numberTestRuns" layoutX="161.0" layoutY="32.0" text="Label" textFill="#ae2929" />
+                  <Label layoutX="9.0" layoutY="58.0" text="Break Time (ms):" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="breakTimeRuns" layoutX="161.0" layoutY="58.0" text="Label" textFill="#ae2929" />
+                  <Label layoutX="357.0" layoutY="58.0" text="Time Unit" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="time1" layoutX="510.0" layoutY="60.0" text="Label" textFill="#ae2929" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="233.0" prefWidth="184.0" styleClass="anchorbackground">
+               <children>
+                  <Label layoutX="14.0" layoutY="8.0" text="Information About the Test Load  or Strategy" textFill="#096f5c">
+                     <font>
+                        <Font name="Apple Chancery" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="43.0" text="Request Number:" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberRequest" layoutX="132.0" layoutY="42.0" text="Label" textFill="#ae2929" />
+                  <Label layoutX="12.0" layoutY="101.0" text="Time Interval :" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="brektimeRequest" layoutX="132.0" layoutY="100.0" text="Label" textFill="#ae2929" />
+                  <Label layoutX="357.0" layoutY="101.0" text="Time Unit" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="time3" layoutX="440.0" layoutY="100.0" text="Label" textFill="#ae2929" />
+                  <Label layoutX="10.0" layoutY="131.0" text="Method for Random Time Generation " textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="randomTime" layoutX="285.0" layoutY="131.0" text="Label" textFill="#ae2929" />
+                  <Label layoutX="11.0" layoutY="154.0" text="Request Body:" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="111.0" layoutY="153.0" text="Statements Number" textFill="#141414" />
+                  <Label fx:id="statementNumber" layoutX="285.0" layoutY="154.0" text="Label" textFill="#ae2929" />
+                  <Label layoutX="411.0" layoutY="153.0" text="Random Generation" textFill="#141414" />
+                  <Label fx:id="statementgenerationway" layoutX="558.0" layoutY="153.0" text="Label" textFill="#ae2929" />
+                  <Label layoutX="12.0" layoutY="73.0" text="Test Duration" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="testduration" layoutX="132.0" layoutY="72.0" text="Label" textFill="#ae2929" />
+                  <Label layoutX="357.0" layoutY="73.0" text="Time Unit" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="time2" layoutX="440.0" layoutY="72.0" text="Label" textFill="#ae2929" />
+               </children></AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="684.0" styleClass="anchorbackground">
+               <children>
+                  <Label layoutX="14.0" layoutY="6.0" text="Third Config.Step" textFill="#096f5c">
+                     <font>
+                        <Font name="Apple Chancery" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="38.0" text="Domain:" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="69.0" text="Port:" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="95.0" text="Users Number:" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="122.0" text="Login" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="domain" layoutX="167.0" layoutY="37.0" text="Label" textFill="#ae2929" />
+                  <Label fx:id="port" layoutX="167.0" layoutY="69.0" text="Label" textFill="#ae2929" />
+                  <Label fx:id="userNumber" layoutX="167.0" layoutY="95.0" text="Label" textFill="#ae2929" />
+                  <Label fx:id="login" layoutX="167.0" layoutY="122.0" text="Label" textFill="#ae2929" />
+                  <Label layoutX="323.0" layoutY="37.0" text="Path:" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="path" layoutX="387.0" layoutY="37.0" text="Label" textFill="#ae2929" />
+                  <Label layoutX="322.0" layoutY="69.0" text="Protocol:" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="protocolcombox" layoutX="387.0" layoutY="69.0" text="Label" textFill="#ae2929" />
+                  <Label layoutX="322.0" layoutY="95.0" text="URL:" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="url" layoutX="387.0" layoutY="94.0" text="Label" textFill="#ae2929" />
+                  <Label layoutX="8.0" layoutY="146.0" text="Password:" textFill="#566f6e">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="password" layoutX="167.0" layoutY="145.0" text="Label" textFill="#ae2929" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <Label layoutX="228.0" layoutY="14.0" text="Configuration Summary" textAlignment="CENTER" textFill="#22a108">
+         <font>
+            <Font name="AppleGothic Regular" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="319.0" layoutY="609.0" mnemonicParsing="false" onAction="#runConfig" styleClass="lion" text="Run Config." />
+      <Button layoutX="178.0" layoutY="609.0" mnemonicParsing="false" onAction="#saveConfig" styleClass="lion" text="Save Config." />
+      <Button fx:id="closeButton" layoutX="456.0" layoutY="609.0" mnemonicParsing="false" onAction="#handleCancel" styleClass="lion" text="Cancel" />
+   </children>
+</AnchorPane>

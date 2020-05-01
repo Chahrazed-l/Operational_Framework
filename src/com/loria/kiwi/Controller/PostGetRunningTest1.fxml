@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="127.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.loria.kiwi.Controller.JmeterOutListener">
+   <children>
+      <ProgressIndicator fx:id="getprogressindicator" layoutX="154.0" layoutY="9.0" progress="0.0" />
+      <Label layoutX="14.0" layoutY="14.0" text="Sent Requests" />
+      <Label layoutX="277.0" layoutY="14.0" text="Successful" />
+      <Label layoutX="278.0" layoutY="54.0" text="Failed" />
+      <Label fx:id="getlabel1" layoutX="391.0" layoutY="14.0" text="0" textFill="#4da43b" />
+      <Label fx:id="getlabel2" layoutX="391.0" layoutY="54.0" text="0" textFill="#f53d3d" />
+      <Label layoutX="493.0" layoutY="14.0" text="\%" />
+      <Label layoutX="493.0" layoutY="54.0" text="\%" />
+      <Label layoutX="14.0" layoutY="86.0" text="Request Number" />
+      <Label fx:id="getlabel3" layoutX="173.0" layoutY="86.0" text="0" />
+   </children>
+</AnchorPane>
